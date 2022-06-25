@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FarmValley.Database;
 
-namespace FarmValley.Database {
+namespace FarmValley.Inventory {
     public class ItemDatabase : MonoBehaviour {
         [SerializeField]
         private List<ItemData> itemData = new List<ItemData>();

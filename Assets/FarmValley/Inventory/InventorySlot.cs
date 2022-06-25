@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FarmValley.Player {
+namespace FarmValley.Inventory {
     [System.Serializable]
     public class InventorySlot {
-
         /// <summary>
         /// The current item held by the inventory slot
         /// </summary>

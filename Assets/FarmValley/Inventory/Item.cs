@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FarmValley.Player {
+namespace FarmValley.Inventory {
     [System.Serializable]
     public class Item {
         /// <summary>

@@ -9,12 +9,26 @@ namespace FarmValley.Player {
         [SerializeField] GameObject slotPrefab;
         [SerializeField] PlayerInventory inventory;
         [SerializeField] CanvasGroup inventoryCanvas;
+        [SerializeField] Transform dragObjectHolder;
 
         // Start is called before the first frame update
         void Awake() {
+            Canvas canvas = inventoryCanvas.GetComponent<Canvas>();
+
+            //Create the UI slots
             for(int i = 0; i < 32; i++) {
-                Instantiate(slotPrefab, slotsHolder.transform);
+                //Setup slot
+                GameObject uiSlot = Instantiate(slotPrefab, slotsHolder.transform);
+                uiSlot.GetComponent<InventorySlotBehaviour>().Setup(this);
+                uiSlot.name = $"{uiSlot.name} {i}";
+
+                //Setup item in that slot
+                InventoryItemBehaviour item = uiSlot.GetComponentInChildren<InventoryItemBehaviour>();
+                item.SetupItem(canvas, dragObjectHolder);
+                item.GetComponent<CanvasGroup>().alpha = 0;
             }
+
+            dragObjectHolder.GetComponent<RectTransform>().SetAsLastSibling();
             inventory = new PlayerInventory(slotsHolder);
         }
 

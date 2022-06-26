@@ -11,13 +11,15 @@ GameObject:
   - component: {fileID: 4174020130312527742}
   - component: {fileID: 4919227093383763265}
   - component: {fileID: 4569021887564510670}
+  - component: {fileID: 1791940275811411439}
+  - component: {fileID: 7184921631046045196}
   m_Layer: 0
   m_Name: ItemIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4174020130312527742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72,6 +74,31 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1791940275811411439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768923713836129303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87ae4fa7d33d8043a1d1e9e9fe5c678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragRect: {fileID: 4174020130312527742}
+--- !u!225 &7184921631046045196
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768923713836129303}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1384771220473404140
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +244,7 @@ GameObject:
   - component: {fileID: 3452611290089196268}
   - component: {fileID: 4847622128455712020}
   - component: {fileID: 2730661894379155132}
+  - component: {fileID: 4246906813911909113}
   m_Layer: 0
   m_Name: SlotUIPrefab
   m_TagString: Untagged
@@ -280,3 +308,15 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &4246906813911909113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174125213826103721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c761cb33b3ff9418419c5d16190f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -239,6 +239,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6374056640079460208, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
   m_PrefabInstance: {fileID: 1828636174}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1512991904 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+  m_PrefabInstance: {fileID: 1828636174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1775937614
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +304,7 @@ MonoBehaviour:
   slotsHolder: {fileID: 227349372}
   slotPrefab: {fileID: 5174125213826103721, guid: db6076fe5e2b8f942bc4f4eff1879eeb, type: 3}
   inventoryCanvas: {fileID: 1828636175}
+  dragObjectHolder: {fileID: 1512991904}
 --- !u!1001 &1828636174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,6 +391,30 @@ PrefabInstance:
     - target: {fileID: 7462797187315309229, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
       propertyPath: m_Color.r
       value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469440530348575126, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4236c7d68f0cd8408f7780627e2a172, type: 3}

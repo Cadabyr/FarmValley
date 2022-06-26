@@ -16,7 +16,7 @@ public class InventoryTest : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.T)) {
+        if(Input.GetKeyDown(KeyCode.T)) {
             int completed = inventory.AddItem("testItem", 1);
             if(completed == -1)
                 Debug.Log("Could not add item to inventory, inventory was full.");

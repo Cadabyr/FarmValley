@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace FarmValley.Player
 {
-    public class PlayerDigAction : MonoBehaviour
+    public class PlayerActionHandler : MonoBehaviour
     {
         public GameObject dirt;
 

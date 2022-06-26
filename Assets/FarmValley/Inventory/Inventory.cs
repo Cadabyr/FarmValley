@@ -13,6 +13,7 @@ namespace FarmValley.Inventory {
 
             for(int i = 0; i < slots.Length; i++) {
                 slots[i] = new InventorySlot();
+                //slots[i].amount = 0;
             }
         }
 
@@ -57,6 +58,10 @@ namespace FarmValley.Inventory {
 
         public InventorySlot[] GetSlots() {
             return slots;
+        }
+
+        public void SwapItems(int index1, int index2) {
+            (slots[index1], slots[index2]) = (slots[index2], slots[index1]);
         }
     }
 }
